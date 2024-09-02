@@ -8,7 +8,6 @@ import 'dotenv/config'
 process.env.TABBY_PLUGINS ??= ''
 process.env.TABBY_CONFIG_DIRECTORY ??= app.getPath('userData')
 
-
 import 'v8-compile-cache'
 import 'source-map-support/register'
 import './sentry'
@@ -17,7 +16,6 @@ import { parseArgs } from './cli'
 import { Application } from './app'
 import electronDebug = require('electron-debug')
 import { loadConfig } from './config'
-
 
 const argv = parseArgs(process.argv, process.cwd())
 
